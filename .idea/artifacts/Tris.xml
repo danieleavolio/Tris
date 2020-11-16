@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Tris">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tris</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Model.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Tris" />
+        <option name="vendor" value="lovaion" />
+        <option name="version" value="1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Tris.jar">
+        <element id="module-output" name="Tris" />
+      </element>
+    </root>
+  </artifact>
+</component>

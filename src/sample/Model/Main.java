@@ -16,7 +16,7 @@ public class Main extends Application {
     private static MediaPlayer mediaPlayer;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../View/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("sample/View/sample.fxml"));
         primaryStage.setTitle("TRIS");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
@@ -25,10 +25,11 @@ public class Main extends Application {
     }
 
     private void loadMedia() {
-        String file = getClass().getResource("../View/peppe.mp3").toString();
+        String file = getClass().getClassLoader().getResource("sample/View/peppe.mp3").toString();
         try {
             Media media = new Media(file);
             mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.setVolume(0.2);
             mediaPlayer.play();
         }
         catch (Exception e){

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <children>
+      <Label fx:id="OZ" layoutX="179.0" layoutY="206.0" onMouseClicked="#OZClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Text layoutX="257.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tris" underline="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial" size="76.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turno:">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="turnoAttuale" layoutX="102.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Text>
+      <Line endX="150.0" startX="-100.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="300.0" />
+      <Line endX="100.0" startX="-150.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="200.0" />
+      <Line endX="100.0" rotate="90.0" startX="-100.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="250.0" />
+      <Line endX="100.0" rotate="90.0" startX="-100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="250.0" />
+      <Label fx:id="TZ" layoutX="179.0" layoutY="297.0" onMouseClicked="#TZClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="ZZ" layoutX="179.0" layoutY="125.0" onMouseClicked="#ZZClicked" text="   " textFill="RED" AnchorPane.leftAnchor="179.0">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="OO" layoutX="275.0" layoutY="206.0" onMouseClicked="#OOClicked" text="   " textFill="RED" AnchorPane.leftAnchor="270.0">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="ZO" layoutX="275.0" layoutY="125.0" onMouseClicked="#ZOClicked" text="   " textFill="RED" AnchorPane.leftAnchor="265.0">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="TO" layoutX="270.0" layoutY="296.0" onMouseClicked="#TOClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="OT" layoutX="357.0" layoutY="206.0" onMouseClicked="#OTClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="ZT" layoutX="357.0" layoutY="125.0" onMouseClicked="#ZTClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="TT" layoutX="357.0" layoutY="296.0" onMouseClicked="#TTClicked" text="   " textFill="RED">
+         <font>
+            <Font name="Arial Black" size="61.0" />
+         </font>
+      </Label>
+      <Label fx:id="winner" disable="true" focusTraversable="false" layoutX="287.0" layoutY="242.0" opacity="0.0" text="WINNER: " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial Black" size="67.0" />
+         </font>
+         <padding>
+            <Insets left="150.0" />
+         </padding>
+      </Label>
+      <Button fx:id="playAgain" defaultButton="true" focusTraversable="false" layoutX="430.0" layoutY="289.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#restartGame" prefHeight="104.0" prefWidth="182.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" text="Play Again" visible="false" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="-12.0" AnchorPane.topAnchor="289.0">
+         <font>
+            <Font name="Arial Black" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

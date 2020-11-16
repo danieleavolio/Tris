@@ -13,6 +13,7 @@ import java.net.URISyntaxException;
 
 public class Main extends Application {
 
+    private static MediaPlayer mediaPlayer;
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../View/sample.fxml"));
@@ -20,9 +21,20 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();
+        loadMedia();
     }
 
-
+    private void loadMedia() {
+        String file = getClass().getResource("../View/peppe.mp3").toString();
+        try {
+            Media media = new Media(file);
+            mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.play();
+        }
+        catch (Exception e){
+            System.out.println("mi dispaice");
+        }
+    }
 
     public static void main(String[] args) {
         launch(args);

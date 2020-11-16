@@ -11,8 +11,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import sample.Model.Game;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+
 
 public class Controller {
 
@@ -144,21 +143,8 @@ public class Controller {
     public void initialize(){
         Game.getGame().initMatrix();
         Game.getGame().stampaMatrice();
-        loadMedia();
     }
-    private void loadMedia() {
-        String file = getClass().getResource("../View/peppe.mp3").toString();
-        System.out.println(file);
-        try {
-            Media media = new Media(file);
-            MediaPlayer mediaPlayer = new MediaPlayer(media);
-            mediaPlayer.play();
-        }
-        catch (Exception e){
-            System.out.println("mi dispaice");
-        }
 
-    }
 
 
     public void restartGame(ActionEvent actionEvent) {
